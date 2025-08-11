@@ -28,7 +28,7 @@ To specify a shell:
 useradd -s /bin/bash username
 ```
 
-How to check if a user is created or not
+check if a user is created or not
 ```bash
 vim /etc/passwd
 ```
@@ -44,7 +44,7 @@ To set or change a user’s password:
 ```bash
 passwd username
 ```
-How to check if password is created or not for the user
+check if password is created or not for the user
 ```bash
 cat /etc/shadow
 ```
