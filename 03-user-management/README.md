@@ -129,3 +129,12 @@ Then add:
 ```bash
 username ALL=(ALL) NOPASSWD: /path/to/command
 ```
+
+## cmd for switching the user
+```bash
+su - username
+```
+switching as root user
+```bash
+sudo su
+```
