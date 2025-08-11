@@ -28,6 +28,11 @@ To specify a shell:
 useradd -s /bin/bash username
 ```
 
+## How to check if a user is created or not
+```bash
+vim /etc/passwd
+```
+
 ### `adduser` Command (For Debian-based systems)
 ```bash
 adduser username
