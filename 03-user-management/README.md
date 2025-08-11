@@ -28,7 +28,7 @@ To specify a shell:
 useradd -s /bin/bash username
 ```
 
-## How to check if a user is created or not
+How to check if a user is created or not
 ```bash
 vim /etc/passwd
 ```
