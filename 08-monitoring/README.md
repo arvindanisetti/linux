@@ -29,6 +29,7 @@ Monitoring system resources is essential to ensure optimal performance, detect i
 - `tail -f /var/log/syslog` – Live monitoring of system logs
 - `journalctl -f` – Live system logs for systemd-based distros
 - `dmesg | tail` – View kernel logs
+- `wc -l /var/log/syslog` - Counts words, lines, and characters. Useful for log analysis
 
 ## CPU and Memory Monitoring
 ### Using `top`
