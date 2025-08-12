@@ -30,7 +30,7 @@ Monitoring system resources is essential to ensure optimal performance, detect i
 - `ping hostname` – Test network connectivity
 - `traceroute hostname` – Show network path to a host
 - `nslookup domain` – Get DNS resolution details
-- `sudo tcpdump -i eth0 port <22>` - Shows real-time packet headers including source/destination IPs, ports, and packet sizes for network troubleshooting
+- `sudo tcpdump -i eth0 port <22>` - Shows real-time packet headers including source/destination IPs for network troubleshooting
 
 ### Log Monitoring
 - `tail -f /var/log/syslog` – Live monitoring of system logs
