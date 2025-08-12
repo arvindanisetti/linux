@@ -14,7 +14,9 @@ Managing disks and storage efficiently is crucial for system performance and sta
 - `free -h` – Shows Memory utilization
 - `journalctl` / `journalctl -u <servicename>` – Displays and searches system logs collected by systemd, useful for troubleshooting services
 - `journalctl -b` - Shows system logs from the current boot
-- `lsof -i :<port>' - Lists processes using the specified port
+- `lsof -i :<port>` - Lists processes using the specified port
+- `ps aux --sort=-%cpu` - Lists all processes sorted by CPU usage in descending order
+
 
 ### Partition Management
 - `fdisk /dev/sdX` – Create and manage partitions
