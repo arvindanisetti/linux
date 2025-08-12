@@ -11,6 +11,8 @@ Managing disks and storage efficiently is crucial for system performance and sta
 - `blkid` – Show UUIDs of devices
 - `df -h` – Check disk space usage
 - `du -sh /path` – Show size of a directory
+- `free -h` – Shows Memory utilization
+- `journalctl` / `journalctl -u <servicename>` – Displays and searches system logs collected by systemd, useful for troubleshooting services
 
 ### Partition Management
 - `fdisk /dev/sdX` – Create and manage partitions
