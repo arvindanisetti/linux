@@ -48,7 +48,7 @@
 (e) System Libraries
 
 🔹 Provide the APIs and runtime support for applications and utilities.
-🔹 Examples: glibc (GNU C Library), libm, OpenSSL, which provide critical functionalities like standard input/output, math operations, cryptography, and networking.
+🔹 Examples: glibc, libm, OpenSSL, which provide critical functionalities like standard input/output, math operations, cryptography, and networking.
 🔹 Act as a bridge between user applications and the kernel system calls, simplifying development.
 🔹 Libraries enable portability of applications across different Linux distributions.
 
