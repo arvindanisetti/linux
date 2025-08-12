@@ -13,7 +13,7 @@ Managing disks and storage efficiently is crucial for system performance and sta
 - `du -sh /path` – Show size of a directory
 - `free -h` – Shows Memory utilization
 - `journalctl` / `journalctl -u <servicename>` – Displays and searches system logs collected by systemd, useful for troubleshooting services
-- `journalctl -b` Shows system logs from the current boot
+- `journalctl -b` - Shows system logs from the current boot
 
 ### Partition Management
 - `fdisk /dev/sdX` – Create and manage partitions
