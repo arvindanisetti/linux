@@ -20,6 +20,7 @@
 
 🔹 The physical components of the computer (CPU, RAM, disk, network interfaces, etc.).
 🔹 The OS interacts with hardware using device drivers.
+
 (b) Kernel (Core of Linux OS)
 
 🔹 The Linux Kernel is responsible for directly managing system resources, including:
@@ -57,7 +58,7 @@
 🔹 System utilities often come from the GNU coreutils or other essential packages.
 🔹 They are crucial for Linux administration, scripting, and automation.
 🔹 Examples include:
-- File operations: ls, cp, mv, rm
-- Text processing: grep, awk, sed
-- Process management: ps, top, systemctl
-- Networking: ping, ip, netstat
+    File operations: ls, cp, mv, rm
+    Text processing: grep, awk, sed
+    Process management: ps, top, systemctl
+    Networking: ping, ip, netstat
