@@ -14,7 +14,7 @@
 +----------------------------------------------------+
 | Hardware (CPU, RAM, Disk, Network, Peripherals)   |
 +----------------------------------------------------+
-```
+
 
 (a) Hardware Layer
 
@@ -59,10 +59,4 @@
 🔹 These are basic command-line tools and programs that facilitate system management and user tasks.
 🔹 System utilities often come from the GNU coreutils or other essential packages.
 🔹 They are crucial for Linux administration, scripting, and automation.
-## Examples include:
-```bash
-    File operations: ls, cp, mv, rm
-    Text processing: grep, awk, sed
-    Process management: ps, top, systemctl
-    Networking: ping, ip, netstat
-```
+🔹 Examples include: File operations - `ls, cp, mv, rm` Text processing: `grep, awk, sed` Process management: `ps, top, systemctl` Networking: `ping, ip, netstat`
