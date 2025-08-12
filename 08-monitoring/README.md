@@ -9,12 +9,18 @@ Monitoring system resources is essential to ensure optimal performance, detect i
 - `top` – Real-time system monitoring
 - `htop` – Interactive process viewer (requires installation)
 - `vmstat` – Report system performance statistics
-- `free -m` – Show memory usage
+- `free -m/h` – Show memory usage
+- `ps aux --sort=-%cpu` - Lists all processes sorted by CPU usage.
+- `lsof -i :<port>` - Lists processes using the specified port
 
 ### Disk Monitoring
 - `df -h` – Check disk space usage
-- `du -sh /path` – Show disk usage of a specific directory
+- `du -sh /<path>` – Show disk usage of a specific directory
 - `iostat` – Display CPU and disk I/O statistics
+- `lsblk -f` - Displays all block devices (disks, partitions) in tree format with filesystem information
+- `ncdu /var/log` - Provides a visual, interactive summary of disk usage in a directory
+- `fdisk -l` - List disk partitions
+
 
 ### Network Monitoring
 - `ifconfig` – Show network interfaces (deprecated, use `ip a`)
@@ -24,10 +30,13 @@ Monitoring system resources is essential to ensure optimal performance, detect i
 - `ping hostname` – Test network connectivity
 - `traceroute hostname` – Show network path to a host
 - `nslookup domain` – Get DNS resolution details
+- `sudo tcpdump -i eth0 port <22>` - Shows real-time packet headers including source/destination IPs, ports, and packet sizes for network troubleshooting
 
 ### Log Monitoring
 - `tail -f /var/log/syslog` – Live monitoring of system logs
 - `journalctl -f` – Live system logs for systemd-based distros
+- `journalctl -b` - Shows system logs from the current boot
+- journalctl / journalctl -u <servicename> - Displays and searches system logs collected by systemd, useful for troubleshooting services
 - `dmesg | tail` – View kernel logs
 - `wc -l /var/log/syslog` - Counts words, lines, and characters. Useful for log analysis
 
