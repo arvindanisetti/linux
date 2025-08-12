@@ -39,7 +39,25 @@
 🔹 A command interpreter that allows users to interact with the kernel.
 🔹 Examples: Bash, Zsh, Fish, Dash, Ksh.
 🔹 Converts user commands into system calls for the kernel.
+
 (d) User Applications
 
 🔹 End-user programs like web browsers, text editors, DevOps tools, etc.
 🔹 Applications interact with the OS using system calls via the shell or GUI.
+
+
+(e) System Libraries
+🔹 Provide the APIs and runtime support for applications and utilities.
+🔹 Examples: glibc (GNU C Library), libm, OpenSSL, which provide critical functionalities like standard input/output, math operations, cryptography, and networking.
+🔹 Act as a bridge between user applications and the kernel system calls, simplifying development.
+🔹 Libraries enable portability of applications across different Linux distributions.
+
+(f) System Utilities
+🔹 These are basic command-line tools and programs that facilitate system management and user tasks.
+🔹 System utilities often come from the GNU coreutils or other essential packages.
+🔹 They are crucial for Linux administration, scripting, and automation.
+🔹 Examples include:
+- File operations: ls, cp, mv, rm
+- Text processing: grep, awk, sed
+- Process management: ps, top, systemctl
+- Networking: ping, ip, netstat
