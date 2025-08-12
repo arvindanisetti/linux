@@ -15,7 +15,6 @@
 | Hardware (CPU, RAM, Disk, Network, Peripherals)   |
 +----------------------------------------------------+
 
-
 (a) Hardware Layer
 
 🔹 The physical components of the computer (CPU, RAM, disk, network interfaces, etc.).
@@ -46,7 +45,6 @@
 🔹 End-user programs like web browsers, text editors, DevOps tools, etc.
 🔹 Applications interact with the OS using system calls via the shell or GUI.
 
-
 (e) System Libraries
 
 🔹 Provide the APIs and runtime support for applications and utilities.
@@ -59,4 +57,11 @@
 🔹 These are basic command-line tools and programs that facilitate system management and user tasks.
 🔹 System utilities often come from the GNU coreutils or other essential packages.
 🔹 They are crucial for Linux administration, scripting, and automation.
-🔹 Examples include: File operations - `ls, cp, mv, rm` Text processing: `grep, awk, sed` Process management: `ps, top, systemctl` Networking: `ping, ip, netstat`
+    
+    File operations: ls, cp, mv, rm
+
+    Text processing: grep, awk, sed
+
+    Process management: ps, top, systemctl
+
+    Networking: ping, ip, netstat
