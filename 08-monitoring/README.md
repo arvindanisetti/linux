@@ -36,7 +36,7 @@ Monitoring system resources is essential to ensure optimal performance, detect i
 - `tail -f /var/log/syslog` – Live monitoring of system logs
 - `journalctl -f` – Live system logs for systemd-based distros
 - `journalctl -b` - Shows system logs from the current boot
-- journalctl / journalctl -u <servicename> - Displays and searches system logs collected by systemd, useful for troubleshooting services
+- `journalctl / journalctl -u <servicename>` - Displays and searches system logs collected by systemd, useful for troubleshooting services
 - `dmesg | tail` – View kernel logs
 - `wc -l /var/log/syslog` - Counts words, lines, and characters. Useful for log analysis
 
