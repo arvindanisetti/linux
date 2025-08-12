@@ -7,3 +7,15 @@
 5. **`netstat -tuln`** – Open network connections.
 6. **`curl https://example.com`** – Fetches a webpage's content.
 7. **`wget https://example.com/file.zip`** – Downloads a file from the internet.
+8. **`sudo tcpdump -i enX0/eth0 port <80>`** - Network interface for monitoring or troubleshooting.
+9. **`traceroute <google.com>`** - To identify the network latency
+
+
+
+
+
+
+
+
+
+Ask ChatGPT
