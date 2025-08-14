@@ -3,28 +3,18 @@
 - **Purpose**: Writing a series of commands in a file (script) to automate manual activities on Linux systems.
 - **Use Cases**:
   - Automating file creation.
+  - Automating system health checks.
   - Printing large sequences of numbers.
   - Repeating CLI activities without manual input.
+  - Creating thousands of files quickly using `touch`.
 - **Benefits**:
   - Reduces manual effort.
+  - Monitoring and alerting.
   - Enables scalability in infrastructure management.
   - Ensures consistency in task execution.
 ---
 
-## **2. Automation in DevOps**
-- **Importance**: Key driver for efficiency in modern infrastructure operations.
-- **Examples**:
-  - Creating thousands of files quickly using `touch`.
-  - Automating system health checks.
-- **Role in DevOps**:
-  - Infrastructure maintenance.
-  - Code management (e.g., Git operations).
-  - Configuration automation.
-  - Monitoring and alerting.
-
----
-
-## **3. Basic Commands for Shell Scripting**
+## **2. Basic Commands for Shell Scripting**
 
 | Command   | Usage Description             | Example                                    |
 |-----------|-------------------------------|--------------------------------------------|
@@ -41,7 +31,7 @@
 
 ---
 
-## **4. File Editing with Vim**
+## **3. File Editing with Vim**
 - **Opening Files**: `vi filename.sh`
 - **Insert Mode**: Press `Esc` → `i`
 - **Saving and Exiting**:
@@ -53,7 +43,7 @@
 
 ---
 
-## **5. Shebang (#!)**
+## **4. Shebang (#!)**
 - **Definition**: First line in a script, e.g., `#!/bin/bash`
 - **Purpose**: Specifies which shell interpreter executes the script.
 - **Common Choices**:
@@ -63,7 +53,7 @@
 
 ---
 
-## **6. Writing a Simple Script**
+## **5. Writing a Simple Script**
 **Example Script**:
 ```bash
 #!/bin/bash
@@ -72,14 +62,9 @@ echo "My name is Jai"
 - **Notes**:
   - Use `echo` to print output to the terminal (similar to `print` in Java/Python).
   - Comment lines with `#` for clarity and documentation.
-
-- **Notes**:
-  - Use `echo` to print output to the terminal (similar to `print` in Java/Python).
-  - Comment lines with `#` for clarity and documentation.
-
 ---
 
-## **7. Executing Shell Scripts**
+## **6. Executing Shell Scripts**
 - **Methods**:
   - `sh script.sh` – Executes with `sh` interpreter.
   - `./script.sh` – Direct execution (requires execute permission).
@@ -94,14 +79,14 @@ echo "My name is Jai"
 
 ---
 
-## **9. Directory Navigation & Management**
+## **7. Directory Navigation & Management**
 - **Current Directory**: `pwd`
 - **Change Directory**: `cd <path>` or `cd ..` to go back.
 - **Create Directory**: `mkdir folder_name`
 
 ---
 
-## **10. Example Automation Script**
+## **8. Example Automation Script**
 ```bash
 #!/bin/bash
 
@@ -114,12 +99,12 @@ cd demofloder
 #Create files
 touch first_file
 touch second_file
-```
-- **Run**: `./script.sh` after giving execute permissions.
 
+Run: `./script.sh` after giving execute permissions.
+```
 ---
 
-## **11. Shell Scripting for DevOps**
+## **9. Shell Scripting for DevOps**
 - **Why Important**:
   - Automates infrastructure tasks.
   - Useful for environments with limited tooling.
@@ -131,7 +116,7 @@ touch second_file
 
 ---
 
-## **12. Monitoring Node Health**
+## **10. Monitoring Node Health**
 | Command | Purpose                                |
 |---------|----------------------------------------|
 | `nproc` | Show number of CPU cores               |
@@ -140,7 +125,7 @@ touch second_file
 
 ---
 
-## **13. Advanced Topics**
+## **11. Advanced Topics**
 - **Signal Trapping**:
   - Handle termination signals (e.g., Ctrl+C) gracefully.
 - **Cron Jobs**:
@@ -150,7 +135,7 @@ touch second_file
 
 ---
 
-## **14. Best Practices**
+## **12. Best Practices**
 1. Always start scripts with a shebang (`#!/bin/bash`).
 2. Use comments to document intent and logic.
 3. Set only necessary permissions (avoid `777` in production).
@@ -159,7 +144,7 @@ touch second_file
 
 ---
 
-**Follow-up Learning Areas**:
+**Learning Areas**:
 - Integrating shell scripts with **cron** for automation.
 - Using shell scripts in **CI/CD pipelines**.
 - Secure script writing and permission management.
