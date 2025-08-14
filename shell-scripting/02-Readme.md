@@ -1,30 +1,5 @@
-# Shell Scripting
+ ## Shell Scripting Core Health Check Commands
 
-## Table of Contents
-- [Custom Node Health Script](#custom-node-health-script)
-- [Script Best Practices](#script-best-practices)
-- [Command Line Tools](#command-line-tools)
-- [Process Management](#process-management)
-- [Error Handling](#error-handling)
-- [Control Structures](#control-structures)
-- [Signal Management](#signal-management)
-- [File Operations](#file-operations)
-
-## Custom Node Health Script
-
-### Objective
-Create a comprehensive shell script (`node_health.sh`) to monitor virtual machine health and system status.
-
-### Script Metadata Template
-```bash
-#!/bin/bash
-# Author: [Your Name]
-# Created on: [Date]
-# Purpose: Outputs node health details
-# Version: V1
-```
-
-### Core Health Check Commands
 ```bash
 # Disk Space Usage
 df -h
@@ -43,8 +18,6 @@ chmod 755 node_health.sh  # For production (recommended)
 ```
 
 ---
-
-## Script Best Practices
 
 ### Improving Readability with Echo Statements
 ```bash
@@ -77,8 +50,6 @@ free -g
 
 ## Command Line Tools
 
-### Download Commands
-
 #### curl vs wget
 - **curl**: Downloads and displays content directly to console
   ```bash
@@ -104,9 +75,7 @@ sudo find / -name "pam.d"
 
 ---
 
-## Process Management
-
-### Listing and Filtering Processes
+## Process Management - Listing and Filtering Processes
 ```bash
 # List all running processes
 ps -ef
@@ -137,7 +106,6 @@ echo "Today is $(date)"
 
 ## Error Handling
 
-### Essential Set Options
 ```bash
 #!/bin/bash
 # Exit immediately if any command fails
@@ -168,8 +136,6 @@ chown newuser:newuser /home/newuser
 
 ---
 
-## Control Structures
-
 ### If-Else Statements
 ```bash
 #!/bin/bash
@@ -199,9 +165,7 @@ done
 
 ---
 
-## Signal Management
-
-### Trap Signals
+## Signal Management - Trap Signals
 ```bash
 #!/bin/bash
 # Prevent script interruption with Ctrl+C
@@ -235,8 +199,6 @@ populate_database
 
 ---
 
-## File Operations
-
 ### User Switching
 ```bash
 # Switch to root user
@@ -263,9 +225,7 @@ grep -n "error" /var/log/application.log
 
 ---
 
-## Common DevOps Use Cases
-
-### System Health Monitoring
+## Common DevOps Use Cases - System Health Monitoring
 ```bash
 #!/bin/bash
 set -euo pipefail
