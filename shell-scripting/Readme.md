@@ -1,12 +1,12 @@
 # Shell Scripting – Comprehensive Guide 
 ---
 ## **1. Understanding Shell Scripting**
-- **Definition**: Writing a series of commands in a file (script) to automate manual activities on Linux systems.
+- **Purpose**: Writing a series of commands in a file (script) to automate manual activities on Linux systems.
 - **Use Cases**:
   - Automating file creation.
   - Printing large sequences of numbers.
   - Repeating CLI activities without manual input.
-- **Benefit in DevOps**:
+- **Benefits**:
   - Reduces manual effort.
   - Enables scalability in infrastructure management.
   - Ensures consistency in task execution.
@@ -66,3 +66,12 @@
 
 ## **6. Writing a Simple Script**
 **Example Script**:
+```bash
+#!/bin/bash
+echo "My name is Abhishek"
+```
+- **Notes**:
+  - Use `echo` to print output to the terminal (similar to `print` in Java/Python).
+  - Comment lines with `#` for clarity and documentation.
+
+
