@@ -1,4 +1,4 @@
-# Shell Scripting for DevOps - Comprehensive Guide
+# Shell Scripting
 
 ## Table of Contents
 - [Custom Node Health Script](#custom-node-health-script)
@@ -9,8 +9,6 @@
 - [Control Structures](#control-structures)
 - [Signal Management](#signal-management)
 - [File Operations](#file-operations)
-
----
 
 ## Custom Node Health Script
 
