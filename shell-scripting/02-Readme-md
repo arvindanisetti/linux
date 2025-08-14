@@ -1,0 +1,316 @@
+# Shell Scripting for DevOps - Comprehensive Guide
+
+## Table of Contents
+- [Custom Node Health Script](#custom-node-health-script)
+- [Script Best Practices](#script-best-practices)
+- [Command Line Tools](#command-line-tools)
+- [Process Management](#process-management)
+- [Error Handling](#error-handling)
+- [Control Structures](#control-structures)
+- [Signal Management](#signal-management)
+- [File Operations](#file-operations)
+
+---
+
+## Custom Node Health Script
+
+### Objective
+Create a comprehensive shell script (`node_health.sh`) to monitor virtual machine health and system status.
+
+### Script Metadata Template
+```bash
+#!/bin/bash
+# Author: [Your Name]
+# Created on: [Date]
+# Purpose: Outputs node health details
+# Version: V1
+```
+
+### Core Health Check Commands
+```bash
+# Disk Space Usage
+df -h
+
+# Memory Usage (in GB)
+free -g
+
+# Number of CPU cores
+nproc
+```
+
+### Setting Script Permissions
+```bash
+chmod 777 node_health.sh  # For development/testing
+chmod 755 node_health.sh  # For production (recommended)
+```
+
+---
+
+## Script Best Practices
+
+### Improving Readability with Echo Statements
+```bash
+#!/bin/bash
+echo "=== System Health Report ==="
+echo "Disk Space:"
+df -h
+
+echo "Memory Usage:"
+free -g
+
+echo "CPU Information:"
+nproc
+```
+
+### Debug Mode
+```bash
+# Enable debug mode to see command execution
+set -x
+
+# Your script commands here
+df -h
+free -g
+
+# To disable debug mode, comment the line
+# set -x
+```
+
+---
+
+## Command Line Tools
+
+### Download Commands
+
+#### curl vs wget
+- **curl**: Downloads and displays content directly to console
+  ```bash
+  curl https://example.com/file.txt
+  curl -X GET https://api.example.com/data
+  ```
+
+- **wget**: Downloads and saves content to local file
+  ```bash
+  wget https://example.com/file.txt
+  # Creates local file, then use cat to view
+  cat file.txt
+  ```
+
+### Finding Files
+```bash
+# Find files by name
+find / -name "filename"
+
+# Use sudo for system-wide search
+sudo find / -name "pam.d"
+```
+
+---
+
+## Process Management
+
+### Listing and Filtering Processes
+```bash
+# List all running processes
+ps -ef
+
+# Filter specific processes using grep
+ps -ef | grep amazon
+
+# Extract specific columns using awk (e.g., process IDs)
+ps -ef | grep amazon | awk '{print $2}'
+```
+
+### Understanding Pipes and Redirection
+- **Pipe (|)**: Passes output from one command as input to another
+- **grep**: Filters command output based on patterns
+- **awk**: Processes and extracts specific fields from text
+
+#### Important Note about Pipes
+```bash
+# This DOES NOT work as expected
+date | echo "today is"
+
+# Commands must send output to STDOUT to work with pipes
+# Correct approach:
+echo "Today is $(date)"
+```
+
+---
+
+## Error Handling
+
+### Essential Set Options
+```bash
+#!/bin/bash
+# Exit immediately if any command fails
+set -e
+
+# Fail on pipeline errors (not just the last command)
+set -o pipefail
+
+# Combined syntax
+set -euo pipefail
+```
+
+### Why Error Handling Matters
+- Prevents execution of dependent commands when prerequisites fail
+- Provides immediate feedback on script failures
+- Essential for production scripts where silent failures can cause issues
+
+### Practical Example
+```bash
+#!/bin/bash
+set -e
+
+# If user creation fails, subsequent commands won't execute
+useradd newuser
+mkdir /home/newuser
+chown newuser:newuser /home/newuser
+```
+
+---
+
+## Control Structures
+
+### If-Else Statements
+```bash
+#!/bin/bash
+a=4
+b=10
+
+if [ $a -gt $b ]; then
+    echo "a is greater than b"
+else
+    echo "b is greater than a"
+fi
+```
+
+### For Loops
+```bash
+#!/bin/bash
+# Print numbers 1 to 10
+for i in {1..10}; do
+    echo $i
+done
+
+# Print numbers 1 to 100
+for i in {1..100}; do
+    echo "Processing item $i"
+done
+```
+
+---
+
+## Signal Management
+
+### Trap Signals
+```bash
+#!/bin/bash
+# Prevent script interruption with Ctrl+C
+trap "echo 'Please do not use Ctrl+C to interrupt this process'" SIGINT
+
+# Your critical script operations here
+# This is useful for database operations, file transfers, etc.
+```
+
+### Common Signals
+- **SIGINT**: Interrupt signal (Ctrl+C)
+- **SIGTERM**: Termination request
+- **SIGHUP**: Hangup signal
+
+### Real-world Use Case
+```bash
+#!/bin/bash
+# Database population script with cleanup on interruption
+trap "echo 'Cleaning up incomplete data...'; cleanup_function; exit" SIGINT
+
+function cleanup_function() {
+    # Remove incomplete database entries
+    # Close connections
+    # Reset system state
+    echo "Cleanup completed"
+}
+
+# Critical database operations
+populate_database
+```
+
+---
+
+## File Operations
+
+### User Switching
+```bash
+# Switch to root user
+sudo su -
+
+# Switch to specific user
+sudo su - username
+
+# Run single command as different user
+sudo -u username command
+```
+
+### Log Analysis Examples
+```bash
+# Search for errors in log files
+cat /var/log/application.log | grep error
+
+# Download and analyze remote logs
+curl https://storage.example.com/logs/app.log | grep error
+
+# Find error patterns with line numbers
+grep -n "error" /var/log/application.log
+```
+
+---
+
+## Common DevOps Use Cases
+
+### System Health Monitoring
+```bash
+#!/bin/bash
+set -euo pipefail
+
+echo "=== System Health Check ==="
+echo "Timestamp: $(date)"
+echo
+echo "Disk Usage:"
+df -h
+echo
+echo "Memory Usage:"
+free -g
+echo
+echo "CPU Count:"
+nproc
+echo
+echo "Running Processes:"
+ps -ef | wc -l
+```
+
+### Process Monitoring
+```bash
+#!/bin/bash
+# Monitor specific application processes
+APP_NAME="nginx"
+PROCESS_COUNT=$(ps -ef | grep $APP_NAME | grep -v grep | wc -l)
+
+if [ $PROCESS_COUNT -eq 0 ]; then
+    echo "WARNING: $APP_NAME is not running!"
+    # Restart service or send alert
+else
+    echo "$APP_NAME is running with $PROCESS_COUNT processes"
+fi
+```
+
+---
+
+## Key Takeaways
+
+1. **Always include metadata** in scripts for maintainability
+2. **Use debugging mode** (`set -x`) for complex scripts
+3. **Implement proper error handling** with `set -e` and `set -o pipefail`
+4. **Use descriptive echo statements** for script output clarity
+5. **Master pipe operations** and text processing tools (grep, awk)
+6. **Implement signal handling** for critical operations
+7. **Practice regularly** to build proficiency with command syntax
