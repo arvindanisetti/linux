@@ -1,5 +1,5 @@
 
-**1. Understanding Shell Scripting**
+# **1. Understanding Shell Scripting**
 - **Purpose**: Writing a series of commands in a file (script) to automate manual activities on Linux systems.
 - **Use Cases**:
   - Automating file creation.
@@ -14,7 +14,7 @@
   - Ensures consistency in task execution.
 ---
 
-**2. Basic Commands for Shell Scripting**
+## **2. Basic Commands for Shell Scripting**
 
 | Command   | Usage Description             | Example                                    |
 |-----------|-------------------------------|--------------------------------------------|
