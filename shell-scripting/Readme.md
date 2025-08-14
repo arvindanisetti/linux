@@ -1,4 +1,3 @@
-# Shell Scripting – Comprehensive Guide 
 
 ## **1. Understanding Shell Scripting**
 - **Purpose**: Writing a series of commands in a file (script) to automate manual activities on Linux systems.
