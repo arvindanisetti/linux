@@ -1,5 +1,5 @@
 
-## **1. Understanding Shell Scripting**
+**1. Understanding Shell Scripting**
 - **Purpose**: Writing a series of commands in a file (script) to automate manual activities on Linux systems.
 - **Use Cases**:
   - Automating file creation.
@@ -14,7 +14,7 @@
   - Ensures consistency in task execution.
 ---
 
-## **2. Basic Commands for Shell Scripting**
+**2. Basic Commands for Shell Scripting**
 
 | Command   | Usage Description             | Example                                    |
 |-----------|-------------------------------|--------------------------------------------|
@@ -31,7 +31,7 @@
 
 ---
 
-## **3. File Editing with Vim**
+**3. File Editing with Vim**
 - **Opening Files**: `vi filename.sh`
 - **Insert Mode**: Press `Esc` → `i`
 - **Saving and Exiting**:
@@ -43,7 +43,7 @@
 
 ---
 
-## **4. Shebang (#!)**
+**4. Shebang (#!)**
 - **Definition**: First line in a script, e.g., `#!/bin/bash`
 - **Purpose**: Specifies which shell interpreter executes the script.
 - **Common Choices**:
@@ -53,7 +53,7 @@
 
 ---
 
-## **5. Writing a Simple Script**
+**5. Writing a Simple Script**
 **Example Script**:
 ```bash
 #!/bin/bash
@@ -64,7 +64,7 @@ echo "My name is Jai"
   - Comment lines with `#` for clarity and documentation.
 ---
 
-## **6. Executing Shell Scripts**
+**6. Executing Shell Scripts**
 - **Methods**:
   - `sh script.sh` – Executes with `sh` interpreter.
   - `./script.sh` – Direct execution (requires execute permission).
@@ -79,14 +79,14 @@ echo "My name is Jai"
 
 ---
 
-## **7. Directory Navigation & Management**
+**7. Directory Navigation & Management**
 - **Current Directory**: `pwd`
 - **Change Directory**: `cd <path>` or `cd ..` to go back.
 - **Create Directory**: `mkdir folder_name`
 
 ---
 
-## **8. Example Automation Script**
+**8. Example Automation Script**
 ```bash
 #!/bin/bash
 
@@ -104,7 +104,7 @@ Run: `./script.sh` after giving execute permissions.
 ```
 ---
 
-## **9. Shell Scripting for DevOps**
+**9. Shell Scripting for DevOps**
 - **Why Important**:
   - Automates infrastructure tasks.
   - Useful for environments with limited tooling.
@@ -116,7 +116,7 @@ Run: `./script.sh` after giving execute permissions.
 
 ---
 
-## **10. Monitoring Node Health**
+**10. Monitoring Node Health**
 | Command | Purpose                                |
 |---------|----------------------------------------|
 | `nproc` | Show number of CPU cores               |
@@ -125,7 +125,7 @@ Run: `./script.sh` after giving execute permissions.
 
 ---
 
-## **11. Advanced Topics**
+**11. Advanced Topics**
 - **Signal Trapping**:
   - Handle termination signals (e.g., Ctrl+C) gracefully.
 - **Cron Jobs**:
@@ -135,7 +135,7 @@ Run: `./script.sh` after giving execute permissions.
 
 ---
 
-## **12. Best Practices**
+**12. Best Practices**
 1. Always start scripts with a shebang (`#!/bin/bash`).
 2. Use comments to document intent and logic.
 3. Set only necessary permissions (avoid `777` in production).
