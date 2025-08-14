@@ -68,10 +68,102 @@
 **Example Script**:
 ```bash
 #!/bin/bash
-echo "My name is Abhishek"
+echo "My name is Jai"
 ```
 - **Notes**:
   - Use `echo` to print output to the terminal (similar to `print` in Java/Python).
   - Comment lines with `#` for clarity and documentation.
+
+- **Notes**:
+  - Use `echo` to print output to the terminal (similar to `print` in Java/Python).
+  - Comment lines with `#` for clarity and documentation.
+
+---
+
+## **7. Executing Shell Scripts**
+- **Methods**:
+  - `sh script.sh` – Executes with `sh` interpreter.
+  - `./script.sh` – Direct execution (requires execute permission).
+- **Permissions**:
+  - Set with `chmod`:
+    - `chmod 777 file` → Read/Write/Execute for all.
+    - Numeric values: `4` (read), `2` (write), `1` (execute).
+
+**Permission Examples**:
+- `chmod 755 script.sh` → Full for owner, read/execute for others.
+- `chmod 444 file` → Read-only for everyone.
+
+---
+
+## **9. Directory Navigation & Management**
+- **Current Directory**: `pwd`
+- **Change Directory**: `cd <path>` or `cd ..` to go back.
+- **Create Directory**: `mkdir folder_name`
+
+---
+
+## **10. Example Automation Script**
+```bash
+#!/bin/bash
+
+#Create folder
+mkdir demofolder
+
+#Enter folder
+cd demofloder
+
+#Create files
+touch first_file
+touch second_file
+```
+- **Run**: `./script.sh` after giving execute permissions.
+
+---
+
+## **11. Shell Scripting for DevOps**
+- **Why Important**:
+  - Automates infrastructure tasks.
+  - Useful for environments with limited tooling.
+  - Provides custom, repeatable solutions.
+- **Example Use Case**:  
+  - Managing 10,000+ Linux VMs.
+  - Automating CPU & memory checks.
+  - Sending alerts on anomalies.
+
+---
+
+## **12. Monitoring Node Health**
+| Command | Purpose                                |
+|---------|----------------------------------------|
+| `nproc` | Show number of CPU cores               |
+| `free`  | Display memory usage                   |
+| `top`   | Real-time CPU and memory usage display |
+
+---
+
+## **13. Advanced Topics**
+- **Signal Trapping**:
+  - Handle termination signals (e.g., Ctrl+C) gracefully.
+- **Cron Jobs**:
+  - Schedule recurring tasks.
+- **Custom Monitoring**:
+  - Scripts for tailored system checks and reporting.
+
+---
+
+## **14. Best Practices**
+1. Always start scripts with a shebang (`#!/bin/bash`).
+2. Use comments to document intent and logic.
+3. Set only necessary permissions (avoid `777` in production).
+4. Test scripts in non-production environments before deployment.
+5. Use descriptive file and variable names for maintainability.
+
+---
+
+**Follow-up Learning Areas**:
+- Integrating shell scripts with **cron** for automation.
+- Using shell scripts in **CI/CD pipelines**.
+- Secure script writing and permission management.
+- Cross-shell and cross-platform script compatibility.
 
 
