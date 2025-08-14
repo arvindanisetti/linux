@@ -1,7 +1,5 @@
 # Shell Scripting – Comprehensive Guide 
-
 ---
-
 ## **1. Understanding Shell Scripting**
 - **Definition**: Writing a series of commands in a file (script) to automate manual activities on Linux systems.
 - **Use Cases**:
@@ -12,10 +10,9 @@
   - Reduces manual effort.
   - Enables scalability in infrastructure management.
   - Ensures consistency in task execution.
-
 ---
 
-## **3. Automation in DevOps**
+## **2. Automation in DevOps**
 - **Importance**: Key driver for efficiency in modern infrastructure operations.
 - **Examples**:
   - Creating thousands of files quickly using `touch`.
@@ -28,7 +25,7 @@
 
 ---
 
-## **4. Basic Commands for Shell Scripting**
+## **3. Basic Commands for Shell Scripting**
 
 | Command   | Usage Description             | Example                                    |
 |-----------|-------------------------------|--------------------------------------------|
@@ -45,7 +42,7 @@
 
 ---
 
-## **5. File Editing with Vim**
+## **4. File Editing with Vim**
 - **Opening Files**: `vi filename.sh`
 - **Insert Mode**: Press `Esc` → `i`
 - **Saving and Exiting**:
@@ -57,7 +54,7 @@
 
 ---
 
-## **6. Shebang (#!)**
+## **5. Shebang (#!)**
 - **Definition**: First line in a script, e.g., `#!/bin/bash`
 - **Purpose**: Specifies which shell interpreter executes the script.
 - **Common Choices**:
@@ -67,5 +64,5 @@
 
 ---
 
-## **7. Writing a Simple Script**
+## **6. Writing a Simple Script**
 **Example Script**:
