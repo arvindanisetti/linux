@@ -153,9 +153,7 @@ Tips: Learn functions and examples per layer; think top-down during troubleshoot
 
 - Firewalls control inbound/outbound traffic via rules (by IPs, ports, protocols).
 - In AWS: Security Groups are stateful firewalls attached to instances.
-- **Common rules**:
-- Allow SSH (22) from admin IP only.
-- Allow HTTP (80) and HTTPS (443) from 0.0.0.0/0 when serving public sites.
+- **Common rules**: Allow SSH (22) from admin IP only, Allow HTTP (80) and HTTPS (443) from 0.0.0.0/0 when serving public sites.
 - Use NACLs for subnet-level stateless filtering when needed.
 
 
