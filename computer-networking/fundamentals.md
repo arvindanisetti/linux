@@ -73,15 +73,15 @@ Once the DNS resolves the domain to an IP, the request is sent from your device 
 - The request finally reaches the **data center** hosting the website, e.g., Netflix’s servers in Paris or Singapore.
 
 ### Tracing Data Routes – Visualizing the Journey
-Using tools like `tracert` (Windows) or `traceroute` (Linux/macOS), you can **visualize** each "hop" the data takes.
+Using tools like `tracert` (Windows) or `traceroute` (Linux/macOS), you can visualize each "hop" the data takes.
 - Each hop is a router or networking device along the route, with delays (latency) measured at each step.
 - Example: Mumbai → Dubai → Europe → Paris.
-- This **demonstrates** how the internet involves **multiple layers and international infrastructure**.
+- This demonstrates how the internet involves multiple layers and international infrastructure.
 
 ### Practical Tools & Concepts
-- **Traceroute (`tracert` / `traceroute`)** helps **visualize the route** and delays.
-- **IP investigation** shows **which providers** handle your data in different hops.
-- **Secure transmission**: HTTPS ensures **encrypted data**, represented as a **sealed envelope** in postal analogy.
+- **Traceroute (`tracert` / `traceroute`)** helps visualize the route and delays.
+- **IP investigation** shows which providers handle your data in different hops.
+- **Secure transmission**: HTTPS ensures encrypted data, represented as a sealed envelope in postal analogy.
 
 ### Analogy: The Internet as an International Postal \& Transportation System
 
@@ -89,12 +89,12 @@ Imagine you want to send a letter (request) to Netflix’s server from your home
 - **Your House (Computer/Device)**: The sender initiates the request.
 - **Local Post Office (Wi-Fi Router)**: Your device hands the letter to the local router, which prepares it for delivery.
 - **Regional Postal Hub / ISP**: The router forwards the letter to your ISP, which manages the regional or national network.
-- **Address Directory (DNS)**: You write “Netflix HQ,” but the postal system looks up the **physical address** (IP address) in the directory.
-- **International Cargo (Undersea Cables \& Routers)**: Your letter goes through **international hubs**—similar to cargo ships or aircraft—traveling across oceans via **fiber optic cables**.
+- **Address Directory (DNS)**: You write “Netflix HQ” but the postal system looks up the physical address (IP address) in the directory.
+- **International Cargo (Undersea Cables \& Routers)**: Your letter goes through international hubs similar to cargo ships or aircraft traveling across oceans via **fiber optic cables**.
 - **Hubs / Sorting Centers (Routers \& Switches)**: The package is routed through various hubs, each directing it closer to its destination based on the address.
-- **Data Centers (Recipient’s Home)**: The letter arrives at Netflix’s data center—the intended recipient.
+- **Data Centers (Recipient’s Home)**: The letter arrives at Netflix’s data center the intended recipient.
 - **Reply Package**: Netflix responds by sending data back, retracing the same path through routers and undersea cables, arriving back to your device.
-- **Tracking (Traceroute)**: You can **track** the package’s progress at each hop, seeing the path it takes.
+- **Tracking (Traceroute)**: You can track the package’s progress at each hop, seeing the path it takes.
 
 
 ## Summary Table
@@ -173,7 +173,7 @@ sudo systemctl status nginx
 ```
 
 
-### Cloud Networking — VPC \& Subnets
+### Cloud Networking — VPC & Subnets
 
 - VPC: Private, isolated virtual network in cloud (e.g., AWS).
 - Subnets:
