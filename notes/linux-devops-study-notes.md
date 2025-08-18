@@ -1,5 +1,4 @@
 # Linux for DevOps - Study Notes
-Link - https://www.youtube.com/watch?v=e01GGTKmtpc&list=PLlfy9GnSVerQjeoYfoYKEMS1yKl89NOvL
 
 ## Overview
 These comprehensive study notes are derived from YouTube video content covering "Linux for DevOps in One Shot". The content is organized systematically to provide a complete reference for DevOps practitioners working with Linux systems.
@@ -852,5 +851,7 @@ This comprehensive guide covers essential Linux knowledge for DevOps practitione
 - **Continuous Learning**: Stay updated with new tools and best practices
 - **Documentation**: Maintain personal notes and command references
 - **Community Engagement**: Participate in forums and contribute to projects
+
+Link - https://www.youtube.com/watch?v=e01GGTKmtpc&list=PLlfy9GnSVerQjeoYfoYKEMS1yKl89NOvL
 
 Remember: Linux mastery is a journey, not a destination. Each command learned builds upon previous knowledge, creating a solid foundation for advanced DevOps practices.
