@@ -87,7 +87,7 @@ Using tools like `tracert` (Windows) or `traceroute` (Linux/macOS), you can **vi
 
 ### Analogy: The Internet as an International Postal \& Transportation System
 
-**Imagine you want to send a letter (request) to Netflix’s server from your home:**
+Imagine you want to send a letter (request) to Netflix’s server from your home:
 - **Your House (Computer/Device)**: The sender initiates the request.
 - **Local Post Office (Wi-Fi Router)**: Your device hands the letter to the local router, which prepares it for delivery.
 - **Regional Postal Hub / ISP**: The router forwards the letter to your ISP, which manages the regional or national network.
@@ -152,12 +152,11 @@ Tips: Learn functions and examples per layer; think top-down during troubleshoot
 ### Network Security: Firewalls \& Security Groups
 
 - Firewalls control inbound/outbound traffic via rules (by IPs, ports, protocols).
-- In AWS:
-    - Security Groups are stateful firewalls attached to instances.
-    - Common rules:
-        - Allow SSH (22) from admin IP only.
-        - Allow HTTP (80) and HTTPS (443) from 0.0.0.0/0 when serving public sites.
-    - Use NACLs for subnet-level stateless filtering when needed.
+- In AWS: Security Groups are stateful firewalls attached to instances.
+- **Common rules**:
+- Allow SSH (22) from admin IP only.
+- Allow HTTP (80) and HTTPS (443) from 0.0.0.0/0 when serving public sites.
+- Use NACLs for subnet-level stateless filtering when needed.
 
 
 ### Practical Diagnostics and Tools
