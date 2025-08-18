@@ -51,16 +51,16 @@ ssh -i /path/to/key.pem ubuntu@<EC2_PUBLIC_IP>
 ```
 
 ### Global Connectivity: The Backbone of the Internet
-The internet is a vast mesh of physical infrastructure fiber optic cables, routers, switches, data centers that crisscross the globe.
+  - The internet is a vast mesh of physical infrastructure fiber optic cables, routers, switches, data centers that crisscross the globe.
   - Undersea fiber optic cables are the most critical component, laying under oceans and connecting continents, facilitating over 95% of international data transfer.
 
 ### Requesting Data: From Your Browser to the Server
-When you type a URL like [`www.netflix.com`](https://www.netflix.com/), your browser initiates a request using the HTTPS protocol.
+  - When you type a URL like [`www.netflix.com`](https://www.netflix.com/), your browser initiates a request using the HTTPS protocol.
   - HTTPS encrypts data to ensure security, especially for sensitive information like passwords. Your browser does not remember the server's IP address; instead, it looks up the address through the Domain Name System (DNS).
 
 ### Server IP Addresses & DNS
-Every website is hosted on servers identified by a **unique IP address**, e.g., 52.44.23.12.
-- The DNS acts like an internet phonebook. When you enter [`www.netflix.com`](https://www.netflix.com), DNS translates this into the server’s IP. The process involves several layers of DNS servers handling your query, from root DNS servers to authoritative ones.
+  - Every website is hosted on servers identified by a **unique IP address**, e.g., 52.44.23.12.
+  - The DNS acts like an internet phonebook. When you enter [`www.netflix.com`](https://www.netflix.com), DNS translates this into the server’s IP. The process involves several layers of DNS servers handling your query, from root DNS servers to authoritative ones.
 
 ### Data Transfer & Infrastructure: The Journey of a Request
 Once the DNS resolves the domain to an IP, the request is sent from your device to:
