@@ -229,8 +229,7 @@ echo "<h1>Deployed from my EC2</h1>" | sudo tee /var/www/html/index.html
 
 - Registrar (e.g., GoDaddy/Route 53) → DNS management → Create A record:
 - Name: @ (root) or subdomain (e.g., app) Type: A
-- Value: <EC2_PUBLIC_IP>
-- TTL: 600
+- Value: `<EC2_PUBLIC_IP>` `TTL: 600`
 
 ```bash
 nslookup yourdomain.com
