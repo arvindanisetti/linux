@@ -22,20 +22,6 @@
   - **Load Balancers**: Their importance and function in DevOps networking.
 - **VPC and VPC Peering**: Comprehension of VPC concepts and how peering works.
 
-### Session Engagement
-- Participants encouraged to stay attentive.
-- Suggested to take notes to facilitate understanding and retention of concepts.
-- The presenter emphasized the need for interactive engagement during the session.
-
-### Roadmap for Becoming a DevOps Engineer
-- Identifying the starting point (computer networking) and end goal (becoming a DevOps engineer).
-- Importance of following the correct learning path and roadmap.
-- Emphasis on the foundational knowledge of networking as a stepping stone.
-
-## Conclusion
-The workshop aims to provide participants with the knowledge and skills to understand and apply computer networking concepts effectively, which is critical for success in a DevOps career. Participants are encouraged to engage actively and utilize the presented knowledge for their growth as professionals in the field.
-
->>> ASSISTANT:
 # Readme.md - Computer Networking For DevOps Workshop Notes
 
 ## Overview
