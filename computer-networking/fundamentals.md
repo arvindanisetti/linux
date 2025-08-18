@@ -1,4 +1,4 @@
-# Computer Networking
+## Computer Networking
 
 - Computer networking enables multiple nodes (computers/servers) to exchange data over interconnected links (like roads connecting cities).
 - The Internet relies on undersea fiber cables, ISPs, data centers, and protocols (HTTP/HTTPS) to move data across the globe.
@@ -50,70 +50,44 @@ ssh -i /path/to/key.pem ubuntu@<EC2_PUBLIC_IP>
 #   TTL: 600 (10 minutes) or per preference
 ```
 
-### Global Connectivity
-
-The internet is a global network made possible through an intricate mesh of undersea optical fiber cables, routers, and data centers that link continents, countries, and cities. These physical links allow information to travel rapidly between any two points in the world.
-
-### Requesting Data
-
-When a user types a website like www.netflix.com in their browser, a request is initiated using the HTTPS protocol for secure, encrypted communication. The browser eventually renders the HTML, CSS, and other web components served by the website.
-
-### Server IP Addresses & DNS
-
-Every website, such as Netflix, is hosted on servers identified by unique IP addresses.
-The Domain Name System (DNS) is like an internet phonebook—it translates the domain name (e.g., www.netflix.com) into the actual IP address of the Netflix server.
-
-### Data Transfer & Infrastructure
-
-The user’s device sends the request to a Wi-Fi router, which then forwards it to an ISP (Internet Service Provider).
-The ISP routes the request across various interconnected devices, switches, and undersea cables to the appropriate data center (such as Netflix’s servers in another country).
-The path can involve many “hops” or relay points before reaching its final destination.
-
-### Tracing Data Routes
-
-Tools like traceroute (Unix/Linux) or tracert (Windows) allow users to see each hop their data takes, and which service providers (like Tata Communications) are involved at each point.
-For example, data might travel from Mumbai to Paris, showing how global and multi-layered the infrastructure is.
-
-
 #### Global Connectivity: The Backbone of the Internet
-    - The internet is a vast mesh of physical infrastructure—fiber optic cables, routers, switches, data centers—that crisscross the globe.
-    - Undersea fiber-optic cables are the most critical component, laying under oceans and connecting continents, facilitating over 95% of international data transfer.
-    - These cables are ultra-thin strands of glass or plastic, carrying light signals at terabit speeds.
-    - On land, regional and national networks connect the undersea cables to data centers and end-users.
-    - The entire system resembles a worldwide highway system, enabling rapid, reliable, and global data exchange.
+  - The internet is a vast mesh of physical infrastructure fiber optic cables, routers, switches, data centers that crisscross the globe.
+Undersea fiber optic cables are the most critical component, laying under oceans and connecting continents, facilitating over 95% of international data transfer.
+
 #### Requesting Data: From Your Browser to the Server
-    - When you type a URL like [`www.netflix.com`](https://www.netflix.com/), your browser initiates a **request** using the **HTTPS protocol**.
-    - HTTPS encrypts data to ensure security, especially for sensitive information like passwords.
-    - Your browser **does not remember** the server's IP address; instead, it looks up the address through the **Domain Name System (DNS)**.
+- When you type a URL like [`www.netflix.com`](https://www.netflix.com/), your browser initiates a request using the HTTPS protocol.
+HTTPS encrypts data to ensure security, especially for sensitive information like passwords.
+Your browser does not remember the server's IP address; instead, it looks up the address through the Domain Name System (DNS).
+
 #### Server IP Addresses & DNS
-Every website is hosted on **servers** identified by a **unique IP address**, e.g., 52.44.23.12.
-    - The **DNS** acts like an **internet phonebook**:
-        - When you enter [`www.netflix.com`](https://www.netflix.com), DNS **translates** this into the server’s IP.
-        - The process involves several layers of DNS servers handling your query, from root DNS servers to authoritative ones.
-    - This lookup process allows users to access websites via memorable domain names instead of numeric IPs.
-#### Data Transfer \& Infrastructure: The Journey of a Request
+- Every website is hosted on servers identified by a **unique IP address**, e.g., 52.44.23.12.
+The DNS acts like an internet phonebook. When you enter [`www.netflix.com`](https://www.netflix.com), DNS translates this into the server’s IP.
+The process involves several layers of DNS servers handling your query, from root DNS servers to authoritative ones.
+
+#### Data Transfer & Infrastructure: The Journey of a Request
 Once the DNS resolves the domain to an IP, the request is sent from your device to:
-    - Your **Wi-Fi router** (local gateway).
-    - The router forwards it to your **ISP** (Internet Service Provider).
-    - From the ISP, data travels through multiple **interconnected devices**: switches, routers, and **undersea cables**.
-    - These form an **interconnected global network**.
-    - The data may **hop** through **multiple relay points**—sometimes crossing cities, countries, or continents.
-    - It may pass through **international carriers** like Tata Communications or Verizon.
-    - The request finally reaches the **data center** hosting the website, e.g., Netflix’s servers in Paris or Singapore.
+- Your **Wi-Fi router** (local gateway).
+- The router forwards it to your **ISP** (Internet Service Provider).
+- From the ISP, data travels through multiple **interconnected devices**: switches, routers, and **undersea cables**.
+- These form an **interconnected global network**.
+- The data may **hop** through **multiple relay points**—sometimes crossing cities, countries, or continents.
+- It may pass through **international carriers** like Tata Communications or Verizon.
+- The request finally reaches the **data center** hosting the website, e.g., Netflix’s servers in Paris or Singapore.
+
 #### Tracing Data Routes – Visualizing the Journey
 Using tools like `tracert` (Windows) or `traceroute` (Linux/macOS), you can **visualize** each "hop" the data takes.
-    - Each hop is a router or networking device along the route, with delays (latency) measured at each step.
-    - Example: Mumbai → Dubai → Europe → Paris.
-    - This **demonstrates** how the internet involves **multiple layers and international infrastructure**.
-#### Practical Tools & Concepts
-    - **Traceroute (`tracert` / `traceroute`)** helps **visualize the route** and delays.
-    - **IP investigation** shows **which providers** handle your data in different hops.
-    - **Secure transmission**: HTTPS ensures **encrypted data**, represented as a **sealed envelope** in postal analogy.
+- Each hop is a router or networking device along the route, with delays (latency) measured at each step.
+- Example: Mumbai → Dubai → Europe → Paris.
+- This **demonstrates** how the internet involves **multiple layers and international infrastructure**.
 
-#### Analogy: The Internet as an International Postal \& Transportation System
+#### Practical Tools & Concepts
+- **Traceroute (`tracert` / `traceroute`)** helps **visualize the route** and delays.
+- **IP investigation** shows **which providers** handle your data in different hops.
+- **Secure transmission**: HTTPS ensures **encrypted data**, represented as a **sealed envelope** in postal analogy.
+
+### Analogy: The Internet as an International Postal \& Transportation System
 
 **Imagine you want to send a letter (request) to Netflix’s server from your home:**
-
 - **Your House (Computer/Device)**: The sender initiates the request.
 - **Local Post Office (Wi-Fi Router)**: Your device hands the letter to the local router, which prepares it for delivery.
 - **Regional Postal Hub / ISP**: The router forwards the letter to your ISP, which manages the regional or national network.
@@ -163,7 +137,7 @@ Tips: Learn functions and examples per layer; think top-down during troubleshoot
 - Network Access (data link + physical)
 
 
-## 5) IP Addressing and Subnetting
+### IP Addressing and Subnetting
 
 - IPv4: 32-bit addresses (~4.29B addresses), dotted-decimal (e.g., 192.168.1.10).
 - IPv6: 128-bit addresses (~340 undecillion), hexadecimal with colons.
@@ -175,7 +149,7 @@ Tips: Learn functions and examples per layer; think top-down during troubleshoot
     - For cloud design, plan CIDR ranges to avoid overlap and to scale (e.g., 10.0.0.0/16 VPC with multiple /24 subnets).
 
 
-## 6) Network Security: Firewalls \& Security Groups
+### Network Security: Firewalls \& Security Groups
 
 - Firewalls control inbound/outbound traffic via rules (by IPs, ports, protocols).
 - In AWS:
@@ -186,7 +160,7 @@ Tips: Learn functions and examples per layer; think top-down during troubleshoot
     - Use NACLs for subnet-level stateless filtering when needed.
 
 
-## 7) Practical Diagnostics and Tools
+### Practical Diagnostics and Tools
 
 - ping: Basic reachability and latency check.
 - traceroute/tracert: Path analysis across network hops.
@@ -204,7 +178,7 @@ sudo systemctl status nginx
 ```
 
 
-## 8) Cloud Networking — VPC \& Subnets
+### Cloud Networking — VPC \& Subnets
 
 - VPC: Private, isolated virtual network in cloud (e.g., AWS).
 - Subnets:
@@ -216,7 +190,7 @@ sudo systemctl status nginx
     - Distribute traffic across multiple instances; fronted in public subnets with targets in private subnets for secure architectures.
 
 
-## 9) Hands-On: Launching a Web Server on AWS
+### Hands-On: Launching a Web Server on AWS
 
 1. Create EC2 instance (Ubuntu, free tier if available).
 2. Networking:
@@ -248,14 +222,20 @@ echo "<h1>Deployed from my EC2</h1>" | sudo tee /var/www/html/index.html
 
 6. Verify in browser: http://<PUBLIC_IP>
 
-## 10) Domain → Server Mapping (DNS)
+### Multi-Tier Architecture (Example)
+
+- Tier 1 (Frontend): React (public subnet, behind ALB)
+- Tier 2 (Backend): Node.js (private subnet, targeted by ALB)
+- Tier 3 (Database): MongoDB (private subnet, no public access)
+- Optional: Redis cache in private subnet
+- Observability: Add logging/metrics; secure inter-tier traffic via SG rules.
+
+### Domain → Server Mapping (DNS)
 
 - Registrar (e.g., GoDaddy/Route 53) → DNS management → Create A record:
-    - Name: @ (root) or subdomain (e.g., app)
-    - Type: A
-    - Value: <EC2_PUBLIC_IP>
-    - TTL: 600
-- Test:
+- Name: @ (root) or subdomain (e.g., app) Type: A
+- Value: <EC2_PUBLIC_IP>
+- TTL: 600
 
 ```bash
 nslookup yourdomain.com
@@ -265,7 +245,7 @@ ping yourdomain.com
 - Note: DNS propagation can take minutes depending on TTL and caches.
 
 
-## 11) NAT and Private/Public Access
+### NAT and Private/Public Access
 
 - NAT allows instances in private subnets to access internet for updates without exposing them publicly.
 - Typical pattern:
@@ -274,7 +254,7 @@ ping yourdomain.com
     - NAT Gateway in public subnet for private outbound traffic
 
 
-## 12) Security Reminders
+### Security Reminders
 
 - Restrict SSH to trusted IPs.
 - Use HTTPS (TLS) where appropriate.
@@ -282,18 +262,9 @@ ping yourdomain.com
 - Principle of least privilege across security groups, IAM, and network policies.
 
 
-## 13) Multi-Tier Architecture (Example)
+### Quick Troubleshooting Guide
 
-- Tier 1 (Frontend): React (public subnet, behind ALB)
-- Tier 2 (Backend): Node.js (private subnet, targeted by ALB)
-- Tier 3 (Database): MongoDB (private subnet, no public access)
-- Optional: Redis cache in private subnet
-- Observability: Add logging/metrics; secure inter-tier traffic via SG rules.
-
-
-## 14) Quick Troubleshooting Guide
-
-- Can’t reach site on port 80:
+- Can’t reach site on port 80
     - Verify instance is running and has public IP.
     - Security group inbound rule for TCP 80 → 0.0.0.0/0.
     - Nginx running: `sudo systemctl status nginx`.
