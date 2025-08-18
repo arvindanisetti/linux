@@ -50,21 +50,19 @@ ssh -i /path/to/key.pem ubuntu@<EC2_PUBLIC_IP>
 #   TTL: 600 (10 minutes) or per preference
 ```
 
-#### Global Connectivity: The Backbone of the Internet
-  - The internet is a vast mesh of physical infrastructure fiber optic cables, routers, switches, data centers that crisscross the globe.
-Undersea fiber optic cables are the most critical component, laying under oceans and connecting continents, facilitating over 95% of international data transfer.
+### Global Connectivity: The Backbone of the Internet
+The internet is a vast mesh of physical infrastructure fiber optic cables, routers, switches, data centers that crisscross the globe.
+  - Undersea fiber optic cables are the most critical component, laying under oceans and connecting continents, facilitating over 95% of international data transfer.
 
-#### Requesting Data: From Your Browser to the Server
-- When you type a URL like [`www.netflix.com`](https://www.netflix.com/), your browser initiates a request using the HTTPS protocol.
-HTTPS encrypts data to ensure security, especially for sensitive information like passwords.
-Your browser does not remember the server's IP address; instead, it looks up the address through the Domain Name System (DNS).
+### Requesting Data: From Your Browser to the Server
+When you type a URL like [`www.netflix.com`](https://www.netflix.com/), your browser initiates a request using the HTTPS protocol.
+  - HTTPS encrypts data to ensure security, especially for sensitive information like passwords. Your browser does not remember the server's IP address; instead, it looks up the address through the Domain Name System (DNS).
 
-#### Server IP Addresses & DNS
-- Every website is hosted on servers identified by a **unique IP address**, e.g., 52.44.23.12.
-The DNS acts like an internet phonebook. When you enter [`www.netflix.com`](https://www.netflix.com), DNS translates this into the server’s IP.
-The process involves several layers of DNS servers handling your query, from root DNS servers to authoritative ones.
+### Server IP Addresses & DNS
+Every website is hosted on servers identified by a **unique IP address**, e.g., 52.44.23.12.
+- The DNS acts like an internet phonebook. When you enter [`www.netflix.com`](https://www.netflix.com), DNS translates this into the server’s IP. The process involves several layers of DNS servers handling your query, from root DNS servers to authoritative ones.
 
-#### Data Transfer & Infrastructure: The Journey of a Request
+### Data Transfer & Infrastructure: The Journey of a Request
 Once the DNS resolves the domain to an IP, the request is sent from your device to:
 - Your **Wi-Fi router** (local gateway).
 - The router forwards it to your **ISP** (Internet Service Provider).
@@ -74,13 +72,13 @@ Once the DNS resolves the domain to an IP, the request is sent from your device 
 - It may pass through **international carriers** like Tata Communications or Verizon.
 - The request finally reaches the **data center** hosting the website, e.g., Netflix’s servers in Paris or Singapore.
 
-#### Tracing Data Routes – Visualizing the Journey
+### Tracing Data Routes – Visualizing the Journey
 Using tools like `tracert` (Windows) or `traceroute` (Linux/macOS), you can **visualize** each "hop" the data takes.
 - Each hop is a router or networking device along the route, with delays (latency) measured at each step.
 - Example: Mumbai → Dubai → Europe → Paris.
 - This **demonstrates** how the internet involves **multiple layers and international infrastructure**.
 
-#### Practical Tools & Concepts
+### Practical Tools & Concepts
 - **Traceroute (`tracert` / `traceroute`)** helps **visualize the route** and delays.
 - **IP investigation** shows **which providers** handle your data in different hops.
 - **Secure transmission**: HTTPS ensures **encrypted data**, represented as a **sealed envelope** in postal analogy.
